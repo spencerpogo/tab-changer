@@ -2,7 +2,7 @@
   "name": "TabInjecter",
   "version": "0.1.0",
   "manifest_version": 2,
-  "description": "Changes tabs to google classroom",
+  "description": "Disguises names and icons of tabs.",
   "background": {
     "scripts": [
       "background.js"
@@ -10,13 +10,14 @@
     "persistent": true
   },
   "browser_action": {
-    "default_title": "Inject!"
+    "default_title": "Disguise!"
   },
   "icons": {"16": "16.png",
             "48": "48.png",
            "128": "128.png" },
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "tabs"
   ],
   "commands": {
     "inject" : {
@@ -31,5 +32,8 @@
         },
         "description": "restore code"
     }
+  },"options_ui": {
+    "page": "options.html",
+    "chrome_style": true
   }
 }
