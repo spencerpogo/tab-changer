@@ -1,0 +1,35 @@
+{
+  "name": "TabInjecter",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "description": "Changes tabs to google classroom",
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "Inject!"
+  },
+  "icons": {"16": "16.png",
+            "48": "48.png",
+           "128": "128.png" },
+  "permissions": [
+    "activeTab"
+  ],
+  "commands": {
+    "inject" : {
+        "suggested_key": {
+             "default": "Ctrl+Shift+E" 
+        },
+        "description": "inject code"
+    },
+    "restore" : {
+        "suggested_key": {
+             "default": "Ctrl+Shift+M" 
+        },
+        "description": "restore code"
+    }
+  }
+}
