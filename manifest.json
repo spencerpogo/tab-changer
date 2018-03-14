@@ -17,7 +17,8 @@
            "128": "128.png" },
   "permissions": [
     "activeTab",
-    "tabs"
+    "tabs",
+    "storage"
   ],
   "commands": {
     "inject" : {
